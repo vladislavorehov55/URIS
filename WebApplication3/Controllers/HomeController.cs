@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication3.Models;
 
 
 namespace WebApplication3.Controllers
@@ -30,8 +31,11 @@ namespace WebApplication3.Controllers
         {
             return View();
         }
+        Plan_rabotContext db = new Plan_rabotContext();
         public ActionResult login1_plan()
         {
+            IEnumerable<Plan_rabot> plans = db.Plans;
+            ViewBag.Plans = plans;
             return View();
         }
         public ActionResult login1_report()

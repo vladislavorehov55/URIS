@@ -68,7 +68,7 @@
             </section>
 
             <section class="main-stuff">
-                <table class="table">
+                <table class="table" contenteditable="true">
                     <tr class="table__row">
                         <th class="table__title">Название задачи</th>
                         <th class="table__title">Длительность</th>
@@ -76,34 +76,17 @@
                         <th class="table__title">Конец</th>
                         <th class="table__title">Ресурсы</th>
                     </tr>
-                    <tr class="table__row">
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                        <td class="table__column">Тест_1</td>
-                    </tr>
+                    @foreach (var p in ViewBag.Plans)
+                    {
+                        <tr class="table__row">
+                            <td class="table__column">@p.Name</td>
+                            <td class="table__column">@p.Duration</td>
+                            <td class="table__column">@p.Begin</td>
+                            <td class="table__column">@p.End</td>
+                            <td class="table__column">@p.Resources</td>
+                        </tr>
+                    }
+
                 </table>
             </section>
         </main>
