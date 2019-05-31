@@ -1,0 +1,351 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.site-wrapper {
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.colored-wrapper {
+    background-color: #d8d0ef;
+}
+
+.site-wrapper--index {
+    padding-top: 175px;
+}
+
+.authorization {
+    font-size: 24px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px 60px;
+    background-color: #d8d0ef;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.authorization__title {
+    font-size: 28px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.error {
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+.authorization__input {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 10px 8px 10px;
+    margin-top: 14px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 1px #03000c;
+}
+
+    .authorization__input:hover {
+        box-shadow: 0 0 0 3px #c7c6c5;
+    }
+
+    .authorization__input:focus {
+        box-shadow: 0 0 0 3px #8fbdec;
+    }
+
+.authorization__button {
+    display: block;
+    width: 100%;
+    padding: 7px 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #0da306;
+    border-radius: 5px;
+}
+
+    .authorization__button:hover {
+        background-color: green;
+    }
+
+    .authorization__button:active {
+        box-shadow: inset 0px 5px 5px 0px #044c01;
+    }
+
+.authorization__error {
+    margin-top: 3px;
+}
+
+.error-show {
+    display: block;
+}
+
+.user-navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: right;
+    list-style: none;
+}
+
+.user-navigation__item {
+    margin-right: 15px;
+}
+
+    .user-navigation__item:nth-last-child(1) {
+        margin-right: 0px;
+    }
+
+.button {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff9933;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: inset 0px 12px 0px 0px rgba(255, 255, 255, 0.1);
+}
+
+    .button:hover {
+        color: #fff;
+        background-color: #cc6600;
+        box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+    }
+
+.box-projects:hover {
+    color: #000;
+    background-color: #ff9933;
+    box-shadow: inset 0px 12px 0px 0px rgba(255, 255, 255, 0.1);
+}
+
+.user-navigation__button {
+    display: flex;
+    padding: 10px 20px;
+    ;
+}
+
+    .user-navigation__button polygon,
+    .user-navigation__button path {
+        fill: #000;
+    }
+
+    .user-navigation__button:hover polygon,
+    .user-navigation__button:hover path {
+        fill: #fff;
+    }
+
+.user-navigation__link {
+    margin-top: 1px;
+    margin-left: 3px;
+}
+
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-navigation {
+    width: 300px;
+    padding-top: 15px;
+}
+
+.main-stuff {
+    width: 900px;
+    padding: 75px;
+    overflow: auto;
+}
+
+.site-navigation__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-navigation__item {
+    margin-bottom: 5px;
+}
+
+.site-navigation__link {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+    background-color: #0da306;
+}
+
+    .site-navigation__link:hover {
+        color: #fff;
+        background-color: #117c28;
+        box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+    }
+
+.site-navigation__item:first-child .site-navigation__link {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #ffffff;
+    box-shadow: none;
+    color: #000;
+}
+
+.box-projects {
+    position: relative
+}
+
+.box-projects--wrapper:hover .button {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.box-projects--wrapper:hover .drop-menu {
+    display: block;
+}
+
+.drop-menu {
+    position: absolute;
+    display: none;
+    width: 149px;
+    list-style: none;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    background-color: #ff9933;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+    .drop-menu a:hover {
+        color: #fff;
+        box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+        background-color: #cc6600;
+    }
+
+    .drop-menu a {
+        display: block;
+        padding: 10px 15px;
+        color: #000000;
+        text-decoration: none;
+    }
+
+.main-stuff__welcome {
+    font-size: 32px;
+    padding: 150px 100px 0px 10px;
+    text-align: center;
+}
+
+.main-stuff--login {
+    padding: 0;
+    width: 1200px;
+}
+
+.main-stuff__welcome--login {
+    padding: 150px 100px;
+}
+
+.table {
+    border-collapse: collapse;
+    border: 2px solid grey;
+    width: 100%;
+    max-width: 100%;
+}
+
+.table__title {
+    font-size: 18px;
+    padding: 5px 40px;
+    border: 2px solid black;
+}
+
+.table__column {
+    padding: 7px 10px;
+    border: 2px solid black;
+}
+
+.table-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.table-buttons__button {
+    font-size: 18px;
+    padding: 7px 15px;
+    margin-right: 10px;
+}
+
+    .table-buttons__button:last-child {
+        margin-right: 0;
+    }
+
+.table__title {
+    background-color: #9c8dfc;
+}
+
+.table__row {
+    background-color: #defcde;
+}
+
+    .table__row:nth-child(2n-1) {
+        background-color: #d7f0f4;
+    }
+
+.active-menu {
+    background-color: #0d6821;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+button[type="button"] {
+    cursor: pointer;
+}
+
+.table-radio {
+    width: 10px;
+}
+
+    .table-radio input {
+        display: block;
+        margin: 0 auto;
+    }
+
+.drop-menu__supreme {
+    /* ВСТАВИТЬ СОСТОЯНИЕ ДЛЯ ТЕКУЩЕГО ПРОЕКТА В ДРОП МЕНЮ*/
+}
+
+.table-buttons__button:hover {
+    color: #fff;
+    background-color: #514f48;
+}
+
+.calendar-wrapper {
+    background-image: url(../Домик.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}

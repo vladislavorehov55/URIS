@@ -1,0 +1,115 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Личный кабинет</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="colored-wrapper">
+    <div class="site-wrapper">
+        <header class="header">
+            <nav class="header__navigation user-navigation">
+                <ul class="user-navigation__list">
+                    <li class="user-navigation__item">
+                        <span class="user-navigation__title">Добро пожаловать,</span><br>
+                        <span class="user-navigation__login">Иван Иванович!</span>
+                    </li>
+                    <li class="user-navigation__item box-projects--wrapper">
+                        <a class="button user-navigation__button box-projects" href="#">Сменить проект</a>
+                        <ul class="drop-menu">
+                            <li><a href="/Home/Login1">Проект_1</a></li>
+                            <li><a class="drop-menu__supreme" href="#">Проект_2</a></li>
+                        </ul>
+                    </li>
+                    <li class="user-navigation__item">
+                        <a class="button user-navigation__button" href="index.html">
+                            <?xml version="1.0" encoding="utf-8" ?>
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">       
+                            <g>
+                            <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	" />
+
+                            <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z" />
+
+                  </g>
+                  </svg>
+                            <span class="user-navigation__link">Выйти</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main class="two-columns">
+            <section class="site-navigation">
+                <ul class="site-navigation__list">
+                    <li class="site-navigation__item">
+                        <a class="site-navigation__link" href="#">Проект_2</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a class="site-navigation__link active-menu" href="/Home/login2_plan">План работ</a>
+
+                    </li>
+                    <li class="site-navigation__item">
+                        <a class="site-navigation__link" href="/Home/login2_documents">Документы</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a class="site-navigation__link" href="/Home/login2_report">Отчеты</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a class="site-navigation__link" href="/Home/login2_calendar">Календарь событий</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="main-stuff">
+                <table class="table">
+                    <tr class="table__row">
+                        <th class="table__title">Название задачи</th>
+                        <th class="table__title">Длительность</th>
+                        <th class="table__title">Начало</th>
+                        <th class="table__title">Конец</th>
+                        <th class="table__title">Ресурсы</th>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                        <td class="table__column">Тест_1</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="~/Scripts/script.js">
+    </script>
+</body>
+</html>
